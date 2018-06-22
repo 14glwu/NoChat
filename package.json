@@ -1,0 +1,16 @@
+{
+    "name": "nochat",
+    "description": "a realtime chat web application",
+    "version": "0.4.0",
+    "main": "server.js",
+    "dependencies": {
+        "cookie-parser": "^1.4.3",
+        "express": "3.4.x",
+        "express-session": "^1.15.5",
+        "socket.io": "0.9.x"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    }
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="description" content="NoChat | a simple chat application built with node.js and websocket">
+        <title>NoChat</title>
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <audio autoplay="autoplay"></audio>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                    <div class="wrapper">
+                        <!--标题和统计人数区域-->
+                        <div class="banner">
+                            <img src="content/logo2.png" id="logo">
+                            <span class="lead">NoChat</span><br>
+                            <span id="status" ></span>
+                        </div>
+                        <!--聊天窗口-->
+                        <div id="historyMsg">
+                        </div>
+                        <!--输入框和一些按钮-->
+                        <div class="controls" >
+                            <!--一些按钮-->
+                            <div class="items">
+                                <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+                                <img src="content/emoji.png" alt="emoji" id="emoji" title="emoji">
+                                <label for="sendImage" class="imageLable">
+                                    <img src="content/img.png" alt="img" id="img" title="image">
+                                    <input id="sendImage" type="file" value="image"/>
+                                </label>
+                                <img src="content/clear.png" id="clearBtn" alt="clear" title="clear message">
+                            </div>
+                            <!--输入框-->
+                            <textarea id="messageInput" placeHolder="enter to send" rows="3" cols="110"></textarea>
+                            <button type="button" id="sendBtn" class="btn btn-success">SEND</button>
+                            <div id="emojiWrapper"></div>
+                        </div>
+                    </div>
+                    <div id="loginWrapper">
+                        <h1 id="info">connecting to server...</h1>
+                        <div id="nickWrapper">
+                            <input type="text" id="nicknameInput" placeholder="nickname"/>
+                            <button type="button" id="loginBtn" class="btn btn-success">OK</button>
+                        </div>
+                    </div>
+                    <footer>
+                        <small>STU&copy;NoChat</small>
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="scripts/hichat.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    </script>
+    </body></html>

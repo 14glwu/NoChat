@@ -1,0 +1,314 @@
+html, body {
+    margin: 0;
+    background: url(../content/background.jpg) repeat;
+    font-family:Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;;
+    height: 100%;
+    width: 100%;
+}
+.wrapper {
+    margin-top: 5%;
+    padding: 5px;
+    border: 1px solid #1296db;
+    height: 650px;
+    border-radius: 5px;
+}
+#nicknameInput{
+    width: 30%;
+    color: black;
+    height: 35px;
+}
+#loginBtn{
+    width: 10%;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 20%;
+}
+#nickWrapper {
+    display: none;
+}
+.banner {
+    margin: 0 0 20px 0;
+    height: 80px;
+    width: 100%;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+#logo{
+    height: 70px;
+    width: 70px;
+    margin: auto 20px;
+}
+.lead{
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#1296db;
+}
+.controls {
+    padding-top: 10px;
+    height: 21%;
+    margin: 5px 0px;
+    position: relative;
+}
+.items *{
+    margin-left: 10px;
+}
+#historyMsg {
+    height: 400px;
+    background-color: #fff;
+    border-top:1px solid #1296db ;
+    border-bottom:1px solid #1296db ;
+    overflow: auto;
+    padding: 10px;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+.timespan {
+    color: #ddd;
+}
+.items {
+    height: 30px;
+}
+#colorStyle {
+    width: 40px;
+    border: none;
+    padding: 0;
+}
+/*custom the file input*/
+#emoji{
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    position: relative;
+    top:-5px;
+}
+#emoji:hover{
+    cursor: pointer;
+    opacity: 0.8;  
+    border: 1px solid #aaa; 
+}  
+.imageLable {
+    position: relative;
+}
+#img{
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    position: relative;
+    top:-5px;
+}
+#img:hover{
+    cursor: pointer;
+    opacity: 0.8;  
+    border: 1px solid #aaa; 
+}  
+#clearBtn{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    top:-5px;
+}
+#clearBtn:hover{
+    cursor: pointer;
+    opacity: 0.8;  
+    border: 1px solid #aaa; 
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*end custom file input*/
+
+#messageInput {
+    float:left;
+    width: 87%;
+    height: 65%;
+    resize: none;
+    padding:5px;
+    position: relative;
+    top:8%;
+    left: 1%;
+    border: none;
+    outline-color:#449D44;
+}
+#sendBtn {
+    width: 10%;
+    height: 65%;
+    float: right;
+    position: relative;
+    top:8%;
+    right: 1%;
+}
+#emojiWrapper {
+    display: none;
+    width: 60%;
+    bottom: 100%;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+}
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+footer {
+    text-align: center;
+}
+@-webkit-keyframes shake-out {
+          0% {
+            -webkit-transform: translateX(1px) rotate(1deg);
+          }
+          100% {
+            -webkit-transform: translateX(-1px) rotate(-1deg);
+          }
+}
+.shake{
+            -webkit-animation-name: shake-out;
+            -webkit-animation-duration: 0.1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: 1;
+}
+/*参考BootStrap框架*/
+/*当页面大于1200px时，大屏幕，主要是PC端*/
+@media (min-width: 1200px) {
+
+}
+/*在992px和1199像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #loginWrapper{
+        padding-top:25%; 
+    }
+    #nicknameInput{
+        width: 35%;
+    }
+    #loginBtn{
+        width: 12%;
+    }
+    #info{
+        font-size: 34px;
+    }
+    #emojiWrapper{
+        width: 70%;
+    }
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #messageInput{
+        width: 82%;
+    }
+    #sendBtn{
+        width: 15%;
+    }
+    #loginWrapper{
+        padding-top:30%; 
+    }
+    #nicknameInput{
+        width: 40%;
+    }
+    #loginBtn{
+        width: 15%;
+    }
+    #info{
+        font-size: 30px;
+    }
+    #emojiWrapper{
+        width: 80%;
+    }
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+    #messageInput{
+        width: 80%;
+        height: 72%;
+    }
+    #sendBtn{
+        height: 72%;
+        width: 17%;
+    }
+    #loginWrapper{
+        padding-top:40%; 
+    }
+    #nicknameInput{
+        width: 45%;
+    }
+    #loginBtn{
+        width: 18%;
+    }
+    #info{
+        font-size: 26px;
+    }
+    .banner{
+        height: 70px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+        margin: auto 20px;
+    }
+    .lead{
+        font-size: 24px;
+    }
+    #emojiWrapper{
+        width: 90%;
+    }
+}
+/*在小于480像素的屏幕，微笑屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+    #messageInput{
+        width: 72%;
+        height: 72%;
+    }
+    #sendBtn{
+        height: 72%;
+        width: 25%;
+    }
+    #loginWrapper{
+        padding-top:55%; 
+    }
+    #nicknameInput{
+        width: 60%;
+    }
+    #loginBtn{
+        width: 20%;
+    }
+    #info{
+        font-size: 20px;
+    }
+    .banner{
+        height: 70px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+        margin: auto 20px;
+    }
+    .lead{
+        font-size: 24px;
+    }
+    #emojiWrapper{
+        width: 90%;
+    }
+
+}
