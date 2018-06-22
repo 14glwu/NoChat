@@ -3,7 +3,7 @@ NoChat
 
 A chat application built with Node.js and socket.io.
 
-View the live demo:http://182.254.231.154:8090/
+View the live demo:http://ericwu.cn:8090/
 
 Features
 ---
