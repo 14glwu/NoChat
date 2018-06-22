@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿NoChat
 ===
 
@@ -20,5 +21,3 @@ How to run
 4. finnaly, open your browser and visit `localhost:8090`
 
 ![codeship builing status](https://codeship.com/projects/73bd0d90-9897-0131-516c-56598d7b87e5/status?branch=master)
-
-
